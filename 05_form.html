@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы</title>
+</head>
+<body>
+    <h1>Формы</h1>
+    <form action="">
+        
+        <div>
+            <label for="text2">Текст</label>
+            <input type="text" id="text2" value="Не подсказка" readonly>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="ваша почта">
+        </div>
+
+        <div>
+            <label for="password">Пароль</label>
+            <input type="password" id="password">
+        </div>
+
+        <div>
+            <label for="number">Число</label>
+            <input type="number" id="number" min="0" max="5">
+        </div>
+
+        <div>
+            <label for="range">Ползунок</label>
+            <input type="range" id="range" min="0" max="10" step="1">
+        </div>
+
+        <div>
+            <label for="date">Дата</label>
+            <input type="date" id="date">
+        </div>
+
+        <div>
+            <label for="color">Дата</label>
+            <input type="color" id="color">
+        </div>
+
+        <div>
+            <label for="message">Сообщение</label>
+            <br>
+            <textarea name="" id="message" cols="15" rows="10"></textarea>
+        </div>
+
+        <div>
+            <label for="sex">Gender</label>
+            <select name="" id="sex">
+                <option value="Male">Male</option>
+                <option value="Female" selected>Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Количество работ</label>
+            <input type="radio" name="work"> 1
+            <input type="radio" name="work"> 2
+            <input type="radio" name="work"> 3
+            <input type="radio" name="work"> 4
+            <input type="radio" name="work"> 5
+            <input type="radio" name="work"> 6
+        </div>
+
+        <div>
+            <label>Список покупок</label>
+            <input type="checkbox" name="food"> Банан
+            <input type="checkbox" name="food"> Хлеб
+            <input type="checkbox" name="food"> Молоко
+        </div>
+
+        <input type="submit" value="Подписаться"> 
+        <br>
+        <button type="submit">Отправить форму</button>
+
+        <label for="week">Week</label>
+        <input type="text" name="" id="">
+
+    </form>
+</body>
+</html>

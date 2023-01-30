@@ -6,62 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="резюме, портфолио, frontend, developer">
     <meta name="description" content="Это описание сайта">
+    <link rel="stylesheet" href="style.css">
     <title>Резюме</title>
 </head>
 <body>
-    <img src="https://upload.wikimedia.org/wikipedia/ru/9/94/Гигачад.jpg" alt="Gigachad" width="250px">
-    <h1>Ли Михаил</h1>
-    <p>Я очень хочу стать <strong> разработчиком </strong> и делать <em> клёвые проекты. </em></p>
-    <p>В свободное время занимаюсь <strong> активными видами спорта </strong> и обожаю проводить время с близкими <strong> <em> на природе </em></strong></p>
-    <h4>Список социальных сетей:</h4>
-    <a href="https://www.instagram.com/mikhail.jpg/" target="_blank">Instagram</a> |
-    <a href="https://www.behance.net/mikhail_lee" target="_blank">Behance</a>
+    <div class="container">
+        <div class="info">
+            <img src="https://upload.wikimedia.org/wikipedia/ru/9/94/Гигачад.jpg" alt="Gigachad" class="avatar">
 
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Фотография</li>
-        <li>Искусство</li>
-        <li>Психология</li>
-        <li>Путешествия</li>
-        <li>Сноуборд</li>
-    </ol>
+            <div class="info-text">
+                <h1>Ли Михаил</h1>
+                <p>Я очень хочу стать <strong> разработчиком </strong> и делать <em> клёвые проекты. </em></p>
+                <p>В свободное время занимаюсь <strong> активными видами спорта </strong> и обожаю проводить время с близкими <strong> <em> на природе </em></strong></p>
+                <h4>Список социальных сетей:</h4>
+                <a href="https://www.instagram.com/mikhail.jpg/" target="_blank">Instagram</a> |
+                <a href="https://www.behance.net/mikhail_lee" target="_blank">Behance</a>
+            </div>
+        </div>
 
-    <h2>Опыт работы</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>UpWork</td>
-                <td>Motion designer</td>
-                <td>2018 - 2019</td>
-            </tr>
-            <tr>
-                <td>Zima Blue</td>
-                <td>Art director</td>
-                <td>2019 - сейчас</td>
-            </tr>
-        </tbody>
-    </table>
+        <div class="card bd-purple">
+            <h2>Мои хобби</h2>
+            <ol class="list">
+                <li>Фотография</li>
+                <li>Искусство</li>
+                <li>Психология</li>
+                <li>Путешествия</li>
+                <li>Сноуборд</li>
+            </ol>
+        </div>
 
-    <h2>Связаться со мной</h2>
-    <form action="">
-        <label for="name"><strong>Ваше имя:</strong></label>
-        <input type="text" id="name" placeholder="Введите имя">
-        <br>
-        <label for="email"><strong>Ваш Email:</strong></label>
-        <input type="text" id="email" placeholder="Введите email">
-        <br>
-        <label for="message"><strong>Ваше сообщение:</strong></label>
-        <br>
-        <textarea name="" id="message" cols="30" rows="5" placeholder="Введите сообщение"></textarea>
-        <br>
-        <button type="submit">Отправить</button>
-    </form>
+        <div class="card bd-gray">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <thead>
+                    <!-- <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr> -->
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>UpWork</td>
+                        <td>Motion designer</td>
+                        <td>2018 - 2019</td>
+                    </tr>
+                    <tr>
+                        <td>Zima Blue</td>
+                        <td>Art director</td>
+                        <td>2019 - сейчас</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>  
+
+        <div class="card bd-green">
+            
+            <form action="" class="form">
+                <h2>Связаться со мной</h2>
+                
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Ваш Email:</label>
+                        <input type="text" id="email" placeholder="Введите email">
+                    </div>
+                
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Ваше сообщение:</label>
+                    <textarea name="" id="message" cols="30" rows="5" placeholder="Введите сообщение"></textarea>
+                </div>
+
+                <button type="submit" class="btn">Отправить</button>
+
+            </form>
+        </div>
+    </div>
 </body>
 </html>
